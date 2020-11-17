@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
 
     public int damage = 1;
 
+    public float timeRemaining = 3;
     private void Start()
     {
         
@@ -20,6 +21,20 @@ public class Bullet : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(velocity);
     }
 
+    
+
+    private void Update()
+    {
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else if (timeRemaining <= 0)
+        {
+            Die();
+            
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
