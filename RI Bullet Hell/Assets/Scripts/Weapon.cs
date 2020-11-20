@@ -11,8 +11,11 @@ public class Weapon : MonoBehaviour
 
     private bool isFiring = false;
 
+    public bool startFire = false;
+
     private void Update()
     {
+        /*
         gameObject.transform.rotation = player.transform.rotation;
         if (Input.GetMouseButton(0)) 
         {
@@ -22,6 +25,9 @@ public class Weapon : MonoBehaviour
                 Fire();
             }
         }
+        */
+        if (startFire == true) { Fire(); startFire = false; }
+        
     }
 
 

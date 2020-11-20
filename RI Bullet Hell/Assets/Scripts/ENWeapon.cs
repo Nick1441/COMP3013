@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class ENWeapon : MonoBehaviour
 {
@@ -7,12 +10,24 @@ public class ENWeapon : MonoBehaviour
 
     public Transform bulletSpawn;
 
+    public List<GameObject> Weapons;
+
+  
+
     public float fireTime = 0.5f;
 
     private bool isFiring = false;
 
     public float timeRemaining = 10;
 
+    private void Start()
+    {
+        int Weap = Random.Range(0, Weapons.Count);
+        
+
+        
+
+    }
     private void Update()
     {
         if (timeRemaining > 0)

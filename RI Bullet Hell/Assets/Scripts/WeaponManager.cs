@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    
+    GameObject CurrWeapon;
     void Start()
     {
         ChangeWeapon(0);
@@ -19,6 +19,7 @@ public class WeaponManager : MonoBehaviour
                 if (i == index)
                 {
                     transform.GetChild(i).gameObject.SetActive(true);
+                    CurrWeapon = transform.GetChild(i).gameObject;
                 }
                 else 
                 {
@@ -33,6 +34,10 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+    void FireGun()
+    {
+        CurrWeapon.GetComponent<Weapon>().startFire = true;
+    }
 
     public void AddWeapon(GameObject prefab)
     {
@@ -47,6 +52,7 @@ public class WeaponManager : MonoBehaviour
     private void Update()
     {
 
+        if (Input.GetMouseButtonDown(0)) FireGun();
 
         mouseData = Input.GetAxis("Mouse ScrollWheel");
         
