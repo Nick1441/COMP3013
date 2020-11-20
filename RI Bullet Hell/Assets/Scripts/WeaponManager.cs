@@ -5,6 +5,7 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     GameObject CurrWeapon;
+    public GameObject player;
     void Start()
     {
         ChangeWeapon(0);
