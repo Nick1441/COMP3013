@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 914932225179494516, guid: 28d001127fa57b64ca472d989b862b2c, type: 3}
-  Spawntime: 0
+  Spawntime: 3
   maxSpawn: 5
   spawnArea: {x: 10, y: 3, z: 10}
 --- !u!4 &760430188
