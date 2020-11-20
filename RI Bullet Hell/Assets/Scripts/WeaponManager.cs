@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     GameObject CurrWeapon;
-    public GameObject player;
+    //public GameObject player;
     void Start()
     {
         ChangeWeapon(0);
@@ -52,7 +52,7 @@ public class WeaponManager : MonoBehaviour
     public int WeapIndex = 0;
     private void Update()
     {
-
+        //CurrWeapon.transform.rotation = player.transform.rotation;
         if (Input.GetMouseButtonDown(0)) FireGun();
 
         mouseData = Input.GetAxis("Mouse ScrollWheel");

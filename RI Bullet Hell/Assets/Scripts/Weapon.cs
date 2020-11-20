@@ -15,18 +15,16 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
-        /*
+        
         gameObject.transform.rotation = player.transform.rotation;
-        if (Input.GetMouseButton(0)) 
-        {
-            
-            if (!isFiring)
+        if (!isFiring)
             {
-                Fire();
+                if (startFire == true) { Fire(); startFire = false; }
+                
             }
-        }
-        */
-        if (startFire == true) { Fire(); startFire = false; }
+        
+        
+        
         
     }
 
