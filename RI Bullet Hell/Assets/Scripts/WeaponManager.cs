@@ -52,7 +52,8 @@ public class WeaponManager : MonoBehaviour
     public int WeapIndex = 0;
     private void Update()
     {
-        //CurrWeapon.transform.rotation = player.transform.rotation;
+        //transform.rotation = GetComponentInParent<Transform>().rotation;
+        CurrWeapon.transform.rotation = Camera.main.transform.rotation;
         if (Input.GetMouseButtonDown(0)) FireGun();
 
         mouseData = Input.GetAxis("Mouse ScrollWheel");

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class SpawnerOld : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject spawn;
@@ -33,6 +33,7 @@ public class Spawner : MonoBehaviour
                 Instantiate(spawn, SpawnLoc);
                 Spawntime = 5;
             }
+            Spawntime = 5;
         }
         Spawntime -= Time.deltaTime;
     }

@@ -6,7 +6,7 @@ public class PAP : MonoBehaviour
 {
     // GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
 
-    GameObject player;
+    public GameObject player;
 
     public List<GameObject> Weapons;
 
