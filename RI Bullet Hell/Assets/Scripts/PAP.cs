@@ -28,6 +28,7 @@ public class PAP : MonoBehaviour
     void Update()
     {
         transform.LookAt(player.transform);
+
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;

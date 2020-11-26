@@ -19,7 +19,7 @@ public class Weapon : MonoBehaviour
         gameObject.transform.rotation = GetComponentInParent<Transform>().transform.rotation;
         if (!isFiring)
             {
-                if (startFire == true) { Fire(); startFire = false; }
+                if (startFire == true) { startFire = false; Fire();  }
                 
             }
         
