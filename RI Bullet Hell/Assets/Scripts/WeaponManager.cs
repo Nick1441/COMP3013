@@ -37,7 +37,12 @@ public class WeaponManager : MonoBehaviour
 
     void FireGun()
     {
+        
+            if(Input.GetMouseButton(0) == false) { CurrWeapon.GetComponent<Weapon>().startFire = false; }
+
         CurrWeapon.GetComponent<Weapon>().startFire = true;
+        
+
     }
 
     public void AddWeapon(GameObject prefab)
@@ -54,7 +59,8 @@ public class WeaponManager : MonoBehaviour
     {
         //transform.rotation = GetComponentInParent<Transform>().rotation;
         CurrWeapon.transform.rotation = Camera.main.transform.rotation;
-        if (Input.GetMouseButtonDown(0)) FireGun();
+        if (Input.GetMouseButton(0)) { FireGun();  }
+        
 
         mouseData = Input.GetAxis("Mouse ScrollWheel");
         

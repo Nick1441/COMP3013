@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     
     public float fireTime = 0.5f;
 
-    private bool isFiring = false;
+    public bool isFiring = false;
 
     public bool startFire = false;
 
@@ -19,9 +19,10 @@ public class Weapon : MonoBehaviour
         gameObject.transform.rotation = GetComponentInParent<Transform>().transform.rotation;
         if (!isFiring)
             {
+            
                 if (startFire == true) { startFire = false; Fire();  }
-                
-            }
+                startFire = false;
+        }
         
         
         
