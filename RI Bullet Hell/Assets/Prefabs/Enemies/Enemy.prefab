@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde5a4eaf5c90f5489be2c8f5e23aacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   Weapons:
   - {fileID: 2980496026085076905, guid: b8e4f0b46fae6fa4c99b2f0c299d331d, type: 3}
   - {fileID: 7753866693303351308, guid: f82359144c58406468c9e6bac83930a9, type: 3}
@@ -159,7 +160,18 @@ MonoBehaviour:
   health: 10
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 914932225179494475}
+        m_MethodName: enemyDie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDamaged:
     m_PersistentCalls:
       m_Calls: []
