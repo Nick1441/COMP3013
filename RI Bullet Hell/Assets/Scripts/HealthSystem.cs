@@ -42,4 +42,9 @@ public class HealthSystem : MonoBehaviour
         }
         SceneManager.LoadScene("SampleScene");
     }
+    public void enemyDie() 
+    {
+        Destroy(gameObject);
+
+    }
 }
