@@ -38,10 +38,12 @@ public class WeaponManager : MonoBehaviour
     void FireGun()
     {
         
-            if(Input.GetMouseButton(0) == false) { CurrWeapon.GetComponent<Weapon>().startFire = false; }
+        if(Input.GetMouseButton(0) == false) { CurrWeapon.GetComponent<Weapon>().startFire = false; }
 
         CurrWeapon.GetComponent<Weapon>().startFire = true;
         
+
+
 
     }
 

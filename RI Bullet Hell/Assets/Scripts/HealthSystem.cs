@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 
@@ -27,8 +28,18 @@ public class HealthSystem : MonoBehaviour
 
         if (health < 1)
         {
-            Destroy(gameObject);
-            //onDie.Invoke();
+            //Destroy(gameObject);
+            onDie.Invoke();
         }
+    }
+
+    public void gameOver() 
+    {
+        if (GetComponent<AudioSource>() != null)
+        {
+
+            GetComponent<AudioSource>().Play();
+        }
+        SceneManager.LoadScene("SampleScene");
     }
 }
