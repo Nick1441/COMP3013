@@ -10,7 +10,7 @@ public class PAP : MonoBehaviour
 
     public List<GameObject> Weapons;
 
-    public float timeRemaining = 5;
+    public float timeRemaining = Random.Range(2, 8);
     public float SwitchTime = 2;
     GameObject CurrWeapon;
     Transform spawn;
@@ -36,7 +36,7 @@ public class PAP : MonoBehaviour
         else if (timeRemaining <= 0)
         {
             FireGun();
-            timeRemaining = 5;
+            timeRemaining = Random.Range(2, 5);
         }
         
 
