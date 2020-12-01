@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1000
-  damage: 10
+  damage: 3
   timeRemaining: 5
 --- !u!54 &5681281094332958265
 Rigidbody:
