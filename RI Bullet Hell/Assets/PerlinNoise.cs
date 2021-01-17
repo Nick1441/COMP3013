@@ -33,6 +33,9 @@ public class PerlinNoise : MonoBehaviour
         offestX = Random.Range(0, 99999);
         offsetY = Random.Range(0, 99999);
         GenerateTexture();
+
+        VisualizePrefabs();
+
     }
 
     // Update is called once per frame
@@ -79,7 +82,7 @@ public class PerlinNoise : MonoBehaviour
         noiseTexture.Apply();
         visulizationUI.texture = noiseTexture;
 
-        VisualizePrefabs();
+        
     }
 
     Color CalculateColour(int x, int y)
@@ -102,13 +105,15 @@ public class PerlinNoise : MonoBehaviour
         {
             for (int y = 0; y < perlinGridStepSizeY; y++)
             {
+
                 int ranSelect = Random.Range(0, Prefabs.Length);
 
-                GameObject spawn = Instantiate(Prefabs[0], new Vector3(x,1,y) + transform.position, transform.rotation);
+                GameObject spawn = Instantiate(Prefabs[0], new Vector3(x, 1, y) + transform.position, transform.rotation);
+
 
                 spawn.transform.SetParent(objectParent.transform);
 
-                Instantiate(spawn);
+                //Instantiate(spawn);
             }
         }
 
