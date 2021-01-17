@@ -358,6 +358,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6318015550920337370, guid: b93a33372d05e7b449b8bd744a7511a7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318015550920337370, guid: b93a33372d05e7b449b8bd744a7511a7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6318015551514011503, guid: b93a33372d05e7b449b8bd744a7511a7,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -540,7 +550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 256
   height: 256
-  scale: 10
+  scale: 20
   offestX: 100
   offsetY: 100
   perlinGridStepSizeX: 75
