@@ -528,13 +528,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214650187}
-  m_LocalRotation: {x: -0, y: 0.016020536, z: -0, w: 0.99987173}
-  m_LocalPosition: {x: 0, y: 0, z: 5.6}
-  m_LocalScale: {x: 7, y: 1, z: 7}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 1.8360001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1214650192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,8 +552,8 @@ MonoBehaviour:
   scale: 5
   offestX: 100
   offsetY: 100
-  perlinGridStepSizeX: 40
-  perlinGridStepSizeY: 40
+  perlinGridStepSizeX: 75
+  perlinGridStepSizeY: 75
   visualizeObjects: 0
   Prefabs:
   - {fileID: 5849440388562606071, guid: 0ea068800c5051f489beade5c2c88863, type: 3}

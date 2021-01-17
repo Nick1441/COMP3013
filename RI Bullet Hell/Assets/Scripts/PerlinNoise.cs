@@ -105,13 +105,18 @@ public class PerlinNoise : MonoBehaviour
         {
             for (int y = 0; y < perlinGridStepSizeY; y++)
             {
+                Color check = CalculateColour(x, y);
 
-                int ranSelect = Random.Range(0, Prefabs.Length);
+                if (check.g < 0.4f)
+                {
+                    int ranSelect = Random.Range(0, Prefabs.Length);
 
-                GameObject spawn = Instantiate(Prefabs[0], new Vector3(x, 1, y) + transform.position, transform.rotation);
+                    GameObject spawn = Instantiate(Prefabs[ranSelect], new Vector3(x, 1, y) + transform.position, transform.rotation);
 
 
-                spawn.transform.SetParent(objectParent.transform);
+                    spawn.transform.SetParent(objectParent.transform);
+                }
+                
 
                 //Instantiate(spawn);
             }
