@@ -24,6 +24,7 @@ public class PerlinNoise : MonoBehaviour
 
     public bool visualizeObjects = false;
     public GameObject[] Prefabs;
+    public GameObject Prefab;
     public RawImage visulizationUI;
     private Texture2D noiseTexture;
 
@@ -111,10 +112,11 @@ public class PerlinNoise : MonoBehaviour
                 {
                     int ranSelect = Random.Range(0, Prefabs.Length);
 
-                    GameObject spawn = Instantiate(Prefabs[ranSelect], new Vector3(x, 1, y) + transform.position, transform.rotation);
-
+                    GameObject spawn = Instantiate(Prefab, new Vector3(x, 1, y) + transform.position, transform.rotation);
+                    int i = Random.Range(0, 20);
 
                     spawn.transform.SetParent(objectParent.transform);
+                    if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], new Vector3(x, Random.Range(0,3), y) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
                 }
                 
 
