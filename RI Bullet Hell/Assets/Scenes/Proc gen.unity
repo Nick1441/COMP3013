@@ -2646,7 +2646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 256
   height: 256
-  scale: 20
+  scale: 10
+  heightScale: 8
   offestX: 100
   offsetY: 100
   perlinGridStepSizeX: 75

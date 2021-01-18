@@ -14,6 +14,7 @@ public class PerlinNoise : MonoBehaviour
     public int height = 256;
 
     public float scale = 20;
+    public float heightScale = 10f;
 
     public float offestX = 100;
     public float offsetY = 100;
@@ -108,17 +109,27 @@ public class PerlinNoise : MonoBehaviour
             {
                 Color check = CalculateColour(x, y);
 
-                if (check.g < 0.4f)
-                {
-                    int ranSelect = Random.Range(0, Prefabs.Length);
+                //if (check.g < 0.4f)
+                //{
+                //    int ranSelect = Random.Range(0, Prefabs.Length);
 
-                    GameObject spawn = Instantiate(Prefab, new Vector3(x, 0.5f, y) + transform.position, transform.rotation);
-                    int i = Random.Range(0, 20);
+                //    GameObject spawn = Instantiate(Prefab, new Vector3(x, SampleStepped(x,y) * heightScale, y) + transform.position, transform.rotation);
+                //    int i = Random.Range(0, 20);
 
-                    spawn.transform.SetParent(objectParent.transform);
-                    if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, Random.Range(1,3), y) - new Vector3(0,0.5f,0)) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
-                }
-                
+                //    spawn.transform.SetParent(objectParent.transform);
+                //    if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, Random.Range(1,3), y) - new Vector3(0,0.5f,0)) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
+                //}
+
+                int ranSelect = Random.Range(0, Prefabs.Length);
+
+                float sample = SampleStepped(x, y);
+
+                GameObject spawn = Instantiate(Prefab, new Vector3(x, sample * heightScale, y) + transform.position, transform.rotation);
+                int i = Random.Range(0, 20);
+
+                spawn.transform.SetParent(objectParent.transform);
+                if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, (sample * heightScale) + Random.Range(1, 3), y) - new Vector3(0, 0.5f, 0)) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
+
 
                 //Instantiate(spawn);
             }
