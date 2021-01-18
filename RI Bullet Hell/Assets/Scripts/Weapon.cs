@@ -4,7 +4,7 @@ public class Weapon : MonoBehaviour
 {
     
     public GameObject bulletPrefab;
-    public GameObject player;
+    //public GameObject player;
     public Transform bulletSpawn;
     
     public float fireTime = 0.5f;
@@ -20,12 +20,9 @@ public class Weapon : MonoBehaviour
         if (!isFiring)
             {
             
-                if (startFire == true) { startFire = false; Fire();  }
+                if (startFire == true) {  Fire();  }
                 startFire = false;
         }
-        
-        
-        
         
     }
 
@@ -33,29 +30,21 @@ public class Weapon : MonoBehaviour
     
     private void Fire()
     {
-        
         isFiring = true;
 
-        
         Vector3 bulletPosition = bulletSpawn.position;
 
-        
         Quaternion bulletRotation = bulletSpawn.rotation;
 
-        
+        Invoke("SetFiring", fireTime);
+
         Instantiate(bulletPrefab, bulletPosition, bulletRotation);
 
-
-        
         if (GetComponent<AudioSource>() != null)
         {
-            
             GetComponent<AudioSource>().Play();
         }
-
-
-       
-        Invoke("SetFiring", fireTime);
+        
     }
 
 

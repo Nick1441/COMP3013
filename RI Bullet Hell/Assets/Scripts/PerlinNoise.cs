@@ -112,11 +112,11 @@ public class PerlinNoise : MonoBehaviour
                 {
                     int ranSelect = Random.Range(0, Prefabs.Length);
 
-                    GameObject spawn = Instantiate(Prefab, new Vector3(x, 1, y) + transform.position, transform.rotation);
+                    GameObject spawn = Instantiate(Prefab, new Vector3(x, 0.5f, y) + transform.position, transform.rotation);
                     int i = Random.Range(0, 20);
 
                     spawn.transform.SetParent(objectParent.transform);
-                    if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], new Vector3(x, Random.Range(0,3), y) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
+                    if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, Random.Range(1,3), y) - new Vector3(0,0.5f,0)) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
                 }
                 
 
