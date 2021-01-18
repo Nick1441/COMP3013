@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 844565011842ee949a5ef90dccdccc59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LaserSplash: {fileID: 219325641794672287, guid: 3e57d0e5e1ca03e4e9a4b2c577755692,
+    type: 3}
   moveSpeed: 6000
   damage: 1
   timeRemaining: 5
@@ -125,4 +127,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3

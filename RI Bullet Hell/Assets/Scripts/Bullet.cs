@@ -5,7 +5,8 @@
 
 public class Bullet : MonoBehaviour
 {
-    
+
+    public GameObject LaserSplash;
     public float moveSpeed = 100;
 
     public int damage = 1;
@@ -46,11 +47,12 @@ public class Bullet : MonoBehaviour
 
         hitObject.SendMessage(methodName, damage, messageOptions);
 
-        Die();
+        SpawnDie();
+        //Die();
     }
 
 
-    
+
     private void OnBecameInvisible()
     {
         Die();
@@ -60,5 +62,22 @@ public class Bullet : MonoBehaviour
     {
         
         Destroy(gameObject);
+    }
+
+    private void SpawnDie()
+    {
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
+        Vector3 NewSplash = this.transform.position;
+        NewSplash.x = NewSplash.x = 0.0f;
+
+        GameObject LaserDeath = Instantiate(LaserSplash, this.transform.position, Quaternion.identity);
+        Destroy(gameObject);
+
+        ParticleSystem Parts = LaserDeath.GetComponent<ParticleSystem>();
+        float Duration = Parts.duration + Parts.startLifetime;
+
+
+        Destroy(LaserDeath, Duration);
     }
 }
