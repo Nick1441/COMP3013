@@ -12,7 +12,9 @@ public class CoverCubes : MonoBehaviour
     void Start()
     {
         Col = GetComponent<Collider>();
+        Col.enabled = false;
         
+        Col.enabled = true;
     }
 
     // Update is called once per frame
