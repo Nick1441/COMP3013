@@ -108,6 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 844565011842ee949a5ef90dccdccc59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LaserSplash: {fileID: 219325641794672287, guid: 001f6502037869e4082a41570e4ac99c,
+    type: 3}
   moveSpeed: 5000
   damage: 50
   timeRemaining: 30

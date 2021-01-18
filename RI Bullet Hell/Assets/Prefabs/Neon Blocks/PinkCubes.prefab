@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 5849440388562606070}
   - component: {fileID: 1081974475564472547}
   - component: {fileID: 4748186014600908848}
+  - component: {fileID: 7463774807166910470}
   m_Layer: 0
   m_Name: PinkCubes
   m_TagString: Cover
@@ -701,6 +702,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5edbfeb9ef0654892407bbdc7857fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &7463774807166910470
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849440388562606071}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &5849440388835774162
 GameObject:
   m_ObjectHideFlags: 0

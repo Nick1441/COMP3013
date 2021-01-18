@@ -66,12 +66,12 @@ public class Bullet : MonoBehaviour
 
     private void SpawnDie()
     {
-        gameObject.GetComponent<BoxCollider>().enabled = false;
+        gameObject.GetComponent<Collider>().enabled = false;
         gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 0.0f, 0.0f);
         Vector3 NewSplash = this.transform.position;
         NewSplash.x = NewSplash.x = 0.0f;
 
-        GameObject LaserDeath = Instantiate(LaserSplash, this.transform.position, Quaternion.identity);
+        GameObject LaserDeath = Instantiate(LaserSplash, this.transform.position + (Camera.main.transform.forward / 6), Quaternion.identity);
         Destroy(gameObject);
 
         ParticleSystem Parts = LaserDeath.GetComponent<ParticleSystem>();

@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &99074682
 Light:
   m_ObjectHideFlags: 0
@@ -2837,9 +2837,6 @@ MonoBehaviour:
   width: 256
   height: 256
   scale: 5
-  heightScale: 15
-  offestX: 100
-  offsetY: 100
   perlinGridStepSizeX: 80
   perlinGridStepSizeY: 80
   visualizeObjects: 0
@@ -3353,7 +3350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1408756273
 Light:
   m_ObjectHideFlags: 0
