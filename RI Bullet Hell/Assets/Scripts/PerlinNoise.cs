@@ -14,10 +14,11 @@ public class PerlinNoise : MonoBehaviour
     public int height = 256;
 
     public float scale = 20;
-    public float heightScale = 10f;
 
-    public float offestX = 100;
-    public float offsetY = 100;
+    private float heightScale;
+
+    private float offestX;
+    private float offsetY;
 
     public int perlinGridStepSizeX;
     public int perlinGridStepSizeY;
@@ -34,6 +35,9 @@ public class PerlinNoise : MonoBehaviour
     {
         offestX = Random.Range(0, 99999);
         offsetY = Random.Range(0, 99999);
+
+        heightScale = Random.Range(5, 15);
+
         GenerateTexture();
 
         VisualizePrefabs();

@@ -2837,7 +2837,7 @@ MonoBehaviour:
   width: 256
   height: 256
   scale: 5
-  heightScale: 10
+  heightScale: 15
   offestX: 100
   offsetY: 100
   perlinGridStepSizeX: 80
