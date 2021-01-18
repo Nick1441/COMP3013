@@ -125,7 +125,7 @@ public class PerlinNoise : MonoBehaviour
                 float sample = SampleStepped(x, y);
 
                 GameObject spawn = Instantiate(Prefab, new Vector3(x, sample * heightScale, y) + transform.position, transform.rotation);
-                int i = Random.Range(0, 20);
+                int i = Random.Range(0, 40);
 
                 spawn.transform.SetParent(objectParent.transform);
                 if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, (sample * heightScale) + Random.Range(1, 3), y) - new Vector3(0, 0.5f, 0)) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
