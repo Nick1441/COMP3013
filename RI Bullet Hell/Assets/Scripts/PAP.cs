@@ -40,7 +40,10 @@ public class PAP : MonoBehaviour
     
     void FireGun()
     {
-        CurrWeapon.GetComponent<Weapon>().startFire = true;
+        if (CurrWeapon != null)
+        {
+            CurrWeapon.GetComponent<Weapon>().startFire = true;
+        }
     }
     
 
