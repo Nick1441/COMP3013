@@ -31,13 +31,13 @@ public class HealthSystem : MonoBehaviour
 
         if (health <= 1)
         {
-            Saudio.PlayOneShot(Die);
+            Saudio.PlayOneShot(Die,0.5f);
             onDie.Invoke();
         }
 
         if(Damaged != null) 
         {
-            Saudio.PlayOneShot(Damaged);
+            Saudio.PlayOneShot(Damaged,0.2f);
         }
     }
 
