@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4486748505424689121}
   - component: {fileID: 6015814029899576258}
   - component: {fileID: 5681281094332958265}
+  - component: {fileID: 5324649392516582376}
   m_Layer: 0
   m_Name: SphereBullet
   m_TagString: Untagged
@@ -90,7 +91,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2661577437360967899}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -107,8 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 844565011842ee949a5ef90dccdccc59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LaserSplash: {fileID: 219325641794672287, guid: e5cd78068a903ed4cbdfcfdb2b94436f,
+    type: 3}
   moveSpeed: 1000
-  damage: 10
+  damage: 30
   timeRemaining: 5
 --- !u!54 &5681281094332958265
 Rigidbody:
@@ -126,3 +129,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!135 &5324649392516582376
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2661577437360967899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Center: {x: 0, y: 0, z: 0}

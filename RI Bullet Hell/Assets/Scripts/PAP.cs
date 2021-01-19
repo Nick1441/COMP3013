@@ -5,21 +5,17 @@ using UnityEngine;
 public class PAP : MonoBehaviour
 {
     public GameObject player;
-
-    //public List<GameObject> Weapons;
-
     public float timeRemaining;
-    
     public GameObject CurrWeapon;
-    //Transform spawn;
-    //int Weap;
+    [SerializeField] float minFireRate = 0;
+    [SerializeField] float maxFireRate = 5;
     void Start()
     {
         timeRemaining = Random.Range(2, 8);
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.LookAt(player.transform);
