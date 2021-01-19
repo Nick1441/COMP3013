@@ -1556,6 +1556,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5077867202288504695, guid: b93a33372d05e7b449b8bd744a7511a7,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6318015550920337360, guid: b93a33372d05e7b449b8bd744a7511a7,
         type: 3}
       propertyPath: m_StepOffset
@@ -1652,6 +1657,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5cf2110e63510a14ab94f627685b806c,
         type: 3}
+    - target: {fileID: 7167764320391967641, guid: b93a33372d05e7b449b8bd744a7511a7,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b93a33372d05e7b449b8bd744a7511a7, type: 3}
 --- !u!1 &664073495
