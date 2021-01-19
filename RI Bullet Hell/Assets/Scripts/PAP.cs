@@ -5,13 +5,13 @@ using UnityEngine;
 public class PAP : MonoBehaviour
 {
     public GameObject player;
-    public float timeRemaining;
+    public float timeRemaining = 5;
     public GameObject CurrWeapon;
     [SerializeField] float minFireRate = 0;
     [SerializeField] float maxFireRate = 5;
     void Start()
     {
-        timeRemaining = Random.Range(2, 8);
+        timeRemaining = Random.Range(minFireRate, maxFireRate);
         
     }
 
@@ -27,7 +27,7 @@ public class PAP : MonoBehaviour
         else if (timeRemaining <= 0)
         {
             FireGun();
-            timeRemaining = Random.Range(2, 5);
+            timeRemaining = Random.Range(minFireRate, maxFireRate);
         }
         
 

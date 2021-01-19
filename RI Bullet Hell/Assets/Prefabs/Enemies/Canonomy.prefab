@@ -756,7 +756,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   timeRemaining: 0
-  CurrWeapon: {fileID: 0}
+  CurrWeapon: {fileID: 417724830714488585}
+  minFireRate: 2
+  maxFireRate: 5
 --- !u!1 &4232641326524370894
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +845,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4232641326391729218}
     m_Modifications:
+    - target: {fileID: 2626071550359374495, guid: 9da1d830e164ae745853043ae08914d9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b5da25e01c0a2f14e905276eab993af4, type: 2}
     - target: {fileID: 3763464431526343152, guid: 9da1d830e164ae745853043ae08914d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -903,8 +910,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 6160403940023351397, guid: 9da1d830e164ae745853043ae08914d9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160403940023351397, guid: 9da1d830e164ae745853043ae08914d9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.39
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9da1d830e164ae745853043ae08914d9, type: 3}
+--- !u!1 &417724830714488585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4571525640829905738, guid: 9da1d830e164ae745853043ae08914d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 4232641326301662275}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1047049708983860659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3763464431526343152, guid: 9da1d830e164ae745853043ae08914d9,

@@ -808,12 +808,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324576357}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &354794096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 417724830714488585, guid: 1d7eb5370a7d39a4580a8755112539c0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4232641326265681496}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &382040645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1453,11 @@ PrefabInstance:
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6297069948534311380, guid: b93a33372d05e7b449b8bd744a7511a7,
+        type: 3}
+      propertyPath: health
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 6318015550920337363, guid: b93a33372d05e7b449b8bd744a7511a7,
         type: 3}
       propertyPath: m_Name
@@ -1517,6 +1516,11 @@ PrefabInstance:
     - target: {fileID: 6318015550920337370, guid: b93a33372d05e7b449b8bd744a7511a7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561207873682551019, guid: b93a33372d05e7b449b8bd744a7511a7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5038,11 +5042,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 100992635}
-    - target: {fileID: 4232641326391729219, guid: 1d7eb5370a7d39a4580a8755112539c0,
-        type: 3}
-      propertyPath: CurrWeapon
-      value: 
-      objectReference: {fileID: 354794096}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d7eb5370a7d39a4580a8755112539c0, type: 3}
 --- !u!1001 &4507321477896145746

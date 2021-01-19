@@ -678,6 +678,8 @@ MonoBehaviour:
   player: {fileID: 0}
   timeRemaining: 0
   CurrWeapon: {fileID: 8458130403726073044}
+  minFireRate: 0
+  maxFireRate: 1
 --- !u!1 &5069727746568825356
 GameObject:
   m_ObjectHideFlags: 0
