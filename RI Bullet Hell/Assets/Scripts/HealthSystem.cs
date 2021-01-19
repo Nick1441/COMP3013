@@ -13,23 +13,31 @@ public class OnDamagedEvent : UnityEvent<int> { }
 public class HealthSystem : MonoBehaviour
 {
 
-    public int health = 10;
+    [SerializeField] float health = 10;
 
     public UnityEvent onDie;
-
     public OnDamagedEvent onDamaged;
+
+    public AudioClip Damaged;
+    public AudioClip Die;
+    public AudioSource Saudio;
 
     public void TakeDamage(int damage)
     {
+
+        health = health - damage;
+
         
-        health -= damage;
 
-        onDamaged.Invoke(health);
-
-        if (health < 1)
+        if (health <= 1)
         {
-            //Destroy(gameObject);
+            Saudio.PlayOneShot(Die,0.5f);
             onDie.Invoke();
+        }
+
+        if(Damaged != null) 
+        {
+            Saudio.PlayOneShot(Damaged,0.2f);
         }
     }
 
@@ -37,7 +45,6 @@ public class HealthSystem : MonoBehaviour
     {
         if (GetComponent<AudioSource>() != null)
         {
-
             GetComponent<AudioSource>().Play();
         }
         SceneManager.LoadScene("SampleScene");
@@ -45,6 +52,6 @@ public class HealthSystem : MonoBehaviour
     public void enemyDie() 
     {
         Destroy(gameObject);
-
     }
+    
 }
