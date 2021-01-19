@@ -424,6 +424,7 @@ GameObject:
   - component: {fileID: 6318015550920337360}
   - component: {fileID: 6297069948534311380}
   - component: {fileID: 7205155966187111591}
+  - component: {fileID: 6571779078560686291}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -505,9 +506,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.75
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!54 &6318015550920337374
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -574,13 +575,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c714d9acbd6504eb28e329f750bab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 10000
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6297069948534311380}
+        m_MethodName: gameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDamaged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6297069948534311380}
+        m_MethodName: TakeDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Damaged: {fileID: 8300000, guid: d36ad7fed18cf2848b50df99f28999e8, type: 3}
   Die: {fileID: 8300000, guid: 96b829c8ef5dd5b46b0e61eae6ee955b, type: 3}
   Saudio: {fileID: 7205155966187111591}
@@ -680,6 +703,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &6571779078560686291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318015550920337363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.34}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6318015550969151699
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +1008,11 @@ PrefabInstance:
     - target: {fileID: 8346934107131988259, guid: 8840cc05b4ff86143b0c311eb0fb1c6b,
         type: 3}
       propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665358293409155665, guid: 8840cc05b4ff86143b0c311eb0fb1c6b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
