@@ -10,5 +10,6 @@ public class MainMenuMovement : MonoBehaviour
     public void LogoClicked()
     {
         Logo.GetComponent<Animator>().SetBool("Clicked", true);
+        Pannel.GetComponent<Animator>().SetBool("Clicked", true);
     }
 }

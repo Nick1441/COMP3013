@@ -83,4 +83,9 @@ public class MenuNavigation : MonoBehaviour
         PauseMenu.SetActive(true);
     }
 
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
 }
