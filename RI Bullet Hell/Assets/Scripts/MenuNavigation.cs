@@ -50,12 +50,12 @@ public class MenuNavigation : MonoBehaviour
 
     }
     
-    void MainMenu()
+    public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
-    void GameScreen()
+    public void GameScreen()
     {
         SceneManager.LoadScene("Proc gen");
     }

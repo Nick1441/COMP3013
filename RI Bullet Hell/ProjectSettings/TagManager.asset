@@ -39,6 +39,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Logo
+    uniqueID: 2709025583
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Rain
+    uniqueID: 929410119
     locked: 0
