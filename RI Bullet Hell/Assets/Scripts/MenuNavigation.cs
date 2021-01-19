@@ -41,7 +41,11 @@ public class MenuNavigation : MonoBehaviour
         //Issue With Mouse Disapearing On Paused? Might only be in Unity
         if (Paused)
         {
-            //Cursor.visible = true;
+            Cursor.visible = true;
+        }
+        else 
+        {
+            Cursor.visible = false;
         }
 
     }
@@ -58,7 +62,8 @@ public class MenuNavigation : MonoBehaviour
 
     public void Resume()
     {
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
+        
         Cursor.visible = false;
         Paused = false;
         Time.timeScale = 1;
@@ -69,7 +74,7 @@ public class MenuNavigation : MonoBehaviour
 
     public void Pause()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Paused = true;
         Time.timeScale = 0;
