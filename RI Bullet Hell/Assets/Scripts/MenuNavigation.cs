@@ -9,6 +9,7 @@ public class MenuNavigation : MonoBehaviour
     //Disable Mouse Mousemovement & Weapon Switching When Paused
     public GameObject Player;
     public GameObject Weapon;
+    public GameObject Crosshair;
 
     //UI For Pause Menu & Bool for Paused Or Not
     public GameObject PauseMenu;
@@ -69,11 +70,13 @@ public class MenuNavigation : MonoBehaviour
         Time.timeScale = 1;
         Player.GetComponent<SmoothMoveTest>().enabled = true;
         Weapon.GetComponent<WeaponManager>().enabled = true;
+        Crosshair.SetActive(true);
         PauseMenu.SetActive(false);
     }
 
     public void Pause()
     {
+        Crosshair.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Paused = true;
