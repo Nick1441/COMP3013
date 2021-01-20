@@ -28,11 +28,16 @@ public class HealthSystem : MonoBehaviour
 
     public void Start()
     {
+        if(gameObject.tag == "Enemy") 
+        {
+            health = health + (10 * PlayerPrefs.GetInt("ResetNo"));
+        }
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(health);
             healthBar.SetHealth(health);
         }
+
     }
 
     public void TakeDamage(int damage)

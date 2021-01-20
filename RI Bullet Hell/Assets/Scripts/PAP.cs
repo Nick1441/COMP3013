@@ -41,6 +41,8 @@ public class PAP : MonoBehaviour
             CurrWeapon.GetComponent<Weapon>().startFire = true;
         }
     }
+
+    
     
 
    

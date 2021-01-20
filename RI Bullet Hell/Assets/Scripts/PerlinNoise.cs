@@ -33,6 +33,7 @@ public class PerlinNoise : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         offestX = Random.Range(0, 99999);
         offsetY = Random.Range(0, 99999);
 

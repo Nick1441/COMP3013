@@ -22,4 +22,14 @@ public class Look : MonoBehaviour
         lookAt.transform.position.z);
         this.transform.LookAt(targetPostition);
     }
+    public void addScore()
+    {
+        int Total = PlayerPrefs.GetInt("TotalEnemiesKilled");
+        int Run = PlayerPrefs.GetInt("RunKills");
+        Total++;
+        Run++;
+        PlayerPrefs.SetInt("TotalEnemiesKilled", Total);
+        PlayerPrefs.SetInt("RunKills", Run);
+
+    }
 }

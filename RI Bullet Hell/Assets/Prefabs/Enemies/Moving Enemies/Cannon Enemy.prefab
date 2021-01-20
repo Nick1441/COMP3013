@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3844802846109538334}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Cannon Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,6 +151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canonomy
       objectReference: {fileID: 0}
+    - target: {fileID: 4232641325907139546, guid: 1d7eb5370a7d39a4580a8755112539c0,
+        type: 3}
+      propertyPath: GetHealth
+      value: 
+      objectReference: {fileID: 8300000, guid: 98e966b619acb584086e3cc4817d675d, type: 3}
     - target: {fileID: 4232641325907139547, guid: 1d7eb5370a7d39a4580a8755112539c0,
         type: 3}
       propertyPath: lookAt
