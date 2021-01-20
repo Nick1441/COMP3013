@@ -8,15 +8,15 @@ public class LoadScore : MonoBehaviour
     public Text ScoreText;
     public Text LevelText;
 
-    string ScoreString = "Enemies Killed - ";
-    string LevelString = "Levels Complted - ";
+    string ScoreString = "Score - ";
+    string LevelString = "Levels Completed - ";
 
     int Score;
     int Levels;
 
     void Start()
     {
-        Score = PlayerPrefs.GetInt("TotalEnemiesKilled");
+        Score = PlayerPrefs.GetInt("Score");
         Levels = PlayerPrefs.GetInt("ResetNo");
 
         string NewScore = ScoreString + Score.ToString();
