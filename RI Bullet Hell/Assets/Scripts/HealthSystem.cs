@@ -28,16 +28,21 @@ public class HealthSystem : MonoBehaviour
 
     public void Start()
     {
-        healthBar.SetMaxHealth(health);
-        healthBar.SetHealth(health);
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(health);
+            healthBar.SetHealth(health);
+        }
     }
 
     public void TakeDamage(int damage)
     {
 
         health = health - damage;
-        healthBar.SetHealth(health);
-
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(health);
+        }
 
         if (health <= 1)
         {
