@@ -146,16 +146,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3844802846109538334}
     m_Modifications:
+    - target: {fileID: 1404967041224452668, guid: 1d7eb5370a7d39a4580a8755112539c0,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4232641325907139367, guid: 1d7eb5370a7d39a4580a8755112539c0,
         type: 3}
       propertyPath: m_Name
       value: Canonomy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232641325907139367, guid: 1d7eb5370a7d39a4580a8755112539c0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4232641325907139546, guid: 1d7eb5370a7d39a4580a8755112539c0,
         type: 3}
       propertyPath: GetHealth
       value: 
       objectReference: {fileID: 8300000, guid: 98e966b619acb584086e3cc4817d675d, type: 3}
+    - target: {fileID: 4232641325907139546, guid: 1d7eb5370a7d39a4580a8755112539c0,
+        type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4232641325907139547, guid: 1d7eb5370a7d39a4580a8755112539c0,
         type: 3}
       propertyPath: lookAt
@@ -220,6 +235,16 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8053415123716109350, guid: 1d7eb5370a7d39a4580a8755112539c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8053415123716109350, guid: 1d7eb5370a7d39a4580a8755112539c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.94
       objectReference: {fileID: 0}
     - target: {fileID: 9193175960096869599, guid: 1d7eb5370a7d39a4580a8755112539c0,
         type: 3}
