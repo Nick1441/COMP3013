@@ -21,6 +21,7 @@ public class HealthSystem : MonoBehaviour
 
     public AudioClip Damaged;
     public AudioClip Die;
+    public AudioClip GetHealth;
     public AudioSource Saudio;
 
     public HealthBar healthBar;
@@ -50,6 +51,11 @@ public class HealthSystem : MonoBehaviour
         }
 
 
+    }
+    public void getHP(int hp) 
+    {
+        health = health + hp;
+        Saudio.PlayOneShot(GetHealth, 0.5f);
     }
 
     public void gameOver() 
