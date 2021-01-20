@@ -40,8 +40,7 @@ Comments will be present throughout scripts, especially before a method detailin
   // not violate any rules.
   ```
   
-- **Code**: Lines must be <75 characters in length. Write only one statement per line. Write only one declaration per line. If continuation lines are not indented automatically, indent them one tab stop (four spaces). Add at least one blank line between method definitions and property definitions.
-- **IF Statements**: Do not use the operators != or == where appropriate, instead use (boolean) and (!boolean). Instead of using nested IF statements for checking for null values, use the ??, ?= operators.
+- **Code**: Lines must be <75 characters in length. Write only one statement per line. Write only one declaration per line. If continuation lines are not indented automatically, indent them one tab stop (four spaces). Add at least one blank line between method definitions and property definitions
 - **Peer review**: Individual scripts should be checked for these standards before being merged into the master branch.
 
 # .gitignore fixing
