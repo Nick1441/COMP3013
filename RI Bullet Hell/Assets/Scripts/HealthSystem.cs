@@ -5,6 +5,7 @@ using UnityEngine;
 
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using System.Collections;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -18,6 +19,8 @@ public class HealthSystem : MonoBehaviour
 
     public UnityEvent onDie;
     public OnDamagedEvent onDamaged;
+
+    public GameObject LoadingUI;
 
     public AudioClip Damaged;
     public AudioClip Die;
@@ -87,8 +90,18 @@ public class HealthSystem : MonoBehaviour
        // PlayerPrefs.SetInt("ResetNo", 0);
         PlayerPrefs.SetInt("RunKills", 0);
         SceneManager.LoadScene("SampleScene");
-        
+
+        //LoadingUI.SetActive(true);
+        //StartCoroutine(EnableLoadingUI());
     }
+
+    //IEnumerator EnableLoadingUI()
+    //{
+    //    yield return new WaitForSeconds(5);
+
+    //    LoadingUI.SetActive(false);
+    //}
+
     public void enemyDie() 
     {
         Destroy(gameObject);

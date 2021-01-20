@@ -149,7 +149,7 @@ public class PerlinNoise : MonoBehaviour
                 }
                 if (k == 1)
                 {
-                    GameObject enemy = Instantiate(Enemies[ranEnemies], (new Vector3(x, (sample * heightScale) + 20, y) - new Vector3(0, 0.5f, 0)) + transform.position, transform.rotation);
+                    GameObject enemy = Instantiate(Enemies[ranEnemies], (new Vector3(x, (sample * heightScale) + 20, y)) + transform.position, transform.rotation);
                     enemy.transform.SetParent(objectParent.transform);
                 }
 
