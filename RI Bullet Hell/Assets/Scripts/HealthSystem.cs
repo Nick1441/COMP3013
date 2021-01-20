@@ -84,9 +84,10 @@ public class HealthSystem : MonoBehaviour
         int runKill = PlayerPrefs.GetInt("RunKills");
         int score = reset * runKill;
         PlayerPrefs.SetInt("Score", score);
-        PlayerPrefs.SetInt("ResetNo", 0);
+       // PlayerPrefs.SetInt("ResetNo", 0);
         PlayerPrefs.SetInt("RunKills", 0);
         SceneManager.LoadScene("SampleScene");
+        
     }
     public void enemyDie() 
     {
