@@ -10,7 +10,7 @@ public class SelectedWeapon : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < Weapons.gameObject.transform.GetChildCount(); i++)
+        for (int i = 0; i < Weapons.gameObject.transform.childCount; i++)
         {
             if (Weapons.gameObject.transform.GetChild(i).gameObject.activeSelf == true)
             {
