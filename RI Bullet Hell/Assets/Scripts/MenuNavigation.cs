@@ -24,6 +24,7 @@ public class MenuNavigation : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
         PauseMenu.SetActive(false);
         UI.SetActive(false);
@@ -86,6 +87,7 @@ public class MenuNavigation : MonoBehaviour
 
     public void Pause()
     {
+
         Crosshair.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
