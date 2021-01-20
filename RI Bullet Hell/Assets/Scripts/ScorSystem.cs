@@ -9,7 +9,7 @@ public class ScorSystem : MonoBehaviour
     void Start()
     {
         Debug.Log(PlayerPrefs.GetInt("ResetNo"));
-     
+        PlayerPrefs.SetInt("RunKills", 0);
     }
 
     // Update is called once per frame
