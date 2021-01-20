@@ -67,6 +67,7 @@ public class MenuNavigation : MonoBehaviour
 
     public void GameScreen()
     {
+        PlayerPrefs.SetInt("ResetNo",0);
         SceneManager.LoadScene("Proc gen");
     }
 
