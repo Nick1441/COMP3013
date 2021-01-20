@@ -64,9 +64,9 @@ public class MenuNavigation : MonoBehaviour
     public void Resume()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        
-        Cursor.visible = false;
         Paused = false;
+        Cursor.visible = false;
+        
         Time.timeScale = 1;
         Player.GetComponent<SmoothMoveTest>().enabled = true;
         Weapon.GetComponent<WeaponManager>().enabled = true;
@@ -89,6 +89,11 @@ public class MenuNavigation : MonoBehaviour
     public void CloseGame()
     {
         Application.Quit();
+    }
+
+    public void EndScreen()
+    {
+
     }
 
 }
