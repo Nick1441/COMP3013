@@ -27,6 +27,7 @@ public class PerlinNoise : MonoBehaviour
     public bool visualizeObjects = false;
     public GameObject[] Prefabs;
     public GameObject Prefab;
+    public GameObject Health;
     public RawImage visulizationUI;
     private Texture2D noiseTexture;
 
@@ -130,10 +131,21 @@ public class PerlinNoise : MonoBehaviour
                 float sample = SampleStepped(x, y);
 
                 GameObject spawn = Instantiate(Prefab, new Vector3(x, sample * heightScale, y) + transform.position, transform.rotation);
-                int i = Random.Range(0, 40);
-
                 spawn.transform.SetParent(objectParent.transform);
-                if (i == 1) { GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, (sample * heightScale) + Random.Range(1, 3), y) - new Vector3(0, 0.5f, 0)) + transform.position, transform.rotation); spawn2.transform.SetParent(objectParent.transform); }
+                int i = Random.Range(0, 40);
+                int j = Random.Range(0, 2000);
+                
+                if (i == 1) 
+                {
+                    GameObject spawn2 = Instantiate(Prefabs[ranSelect], (new Vector3(x, (sample * heightScale) + Random.Range(1, 3), y) - new Vector3(0, 0.5f, 0)) + transform.position, transform.rotation);
+                    spawn2.transform.SetParent(objectParent.transform); 
+                }
+                if (j == 1 && i != 1)
+                {
+                    GameObject hp = Instantiate(Health, (new Vector3(x, (sample * heightScale) + 2, y) - new Vector3(0, 0.5f, 0)) + transform.position, transform.rotation);
+                    hp.transform.SetParent(objectParent.transform);
+                }
+
 
 
                 //Instantiate(spawn);

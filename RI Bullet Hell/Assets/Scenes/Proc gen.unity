@@ -1288,6 +1288,7 @@ MonoBehaviour:
   - {fileID: 5849440388562606071, guid: 1187a7e8cdf322b4aa49b8da4353f221, type: 3}
   - {fileID: 5849440388562606071, guid: a42fd0749481b7b4f943bf6f98311333, type: 3}
   Prefab: {fileID: 5849440388562606071, guid: 0ea068800c5051f489beade5c2c88863, type: 3}
+  Health: {fileID: 2751632955837331257, guid: d3eefb7ef567766479054c7139f6f4a2, type: 3}
   visulizationUI: {fileID: 223654434}
 --- !u!1 &1250730757
 GameObject:
