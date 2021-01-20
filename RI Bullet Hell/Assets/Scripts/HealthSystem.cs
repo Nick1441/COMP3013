@@ -60,6 +60,10 @@ public class HealthSystem : MonoBehaviour
     public void getHP(int hp) 
     {
         health = health + hp;
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(health);
+        }
         Saudio.PlayOneShot(GetHealth, 0.5f);
     }
 

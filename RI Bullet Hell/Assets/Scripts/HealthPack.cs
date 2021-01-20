@@ -24,7 +24,7 @@ public class HealthPack : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        string methodName = "GiveHealth";
+        string methodName = "getHP";
 
         SendMessageOptions messageOptions = SendMessageOptions.DontRequireReceiver;
 
