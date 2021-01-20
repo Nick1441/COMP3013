@@ -11,6 +11,13 @@ public class MenuNavigation : MonoBehaviour
     public GameObject Weapon;
     public GameObject Crosshair;
 
+    //Managing Controls UI
+    public GameObject Pannel;
+    public GameObject Pannel1;
+    public GameObject Pannel2;
+    public GameObject UI;
+    public GameObject UIButton;
+
     //UI For Pause Menu & Bool for Paused Or Not
     public GameObject PauseMenu;
     public bool Paused = false;
@@ -19,6 +26,8 @@ public class MenuNavigation : MonoBehaviour
     {
         Cursor.visible = false;
         PauseMenu.SetActive(false);
+        UI.SetActive(false);
+        UIButton.SetActive(false);
     }
 
     void Update()
@@ -96,4 +105,21 @@ public class MenuNavigation : MonoBehaviour
 
     }
 
+    public void DisplayControls()
+    {
+        Pannel.SetActive(false);
+        Pannel2.SetActive(false);
+        Pannel1.SetActive(false);
+        UI.SetActive(true);
+        UIButton.SetActive(true);
+    }    
+
+    public void CloseControls()
+    {
+        Pannel.SetActive(true);
+        Pannel1.SetActive(true);
+        Pannel2.SetActive(true);
+        UI.SetActive(false);
+        UIButton.SetActive(false);
+    }
 }

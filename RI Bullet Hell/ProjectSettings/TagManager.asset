@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Cover
   - Enemy
+  - Pannel
+  - UI
+  - UIB
   layers:
   - Default
   - TransparentFX
