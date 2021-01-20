@@ -81,7 +81,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2926903392763561089}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -158,6 +158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
         type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
       propertyPath: GetHealth
       value: 
       objectReference: {fileID: 8300000, guid: 98e966b619acb584086e3cc4817d675d, type: 3}
@@ -165,6 +170,31 @@ PrefabInstance:
         type: 3}
       propertyPath: health
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2926903393128796888}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: addScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2946427358029450029, guid: 6295879dadccc8f4891b8372b1a63764,
         type: 3}
@@ -254,3 +284,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 35363810730924533}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2926903393128796888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2946427358029450029, guid: 6295879dadccc8f4891b8372b1a63764,
+    type: 3}
+  m_PrefabInstance: {fileID: 35363810730924533}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a08567c7bbcbac4581fecb57c02267a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

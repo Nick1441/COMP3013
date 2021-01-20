@@ -78,7 +78,8 @@ public class HealthSystem : MonoBehaviour
         {
             GetComponent<AudioSource>().Play();
         }
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("End Screen");
+        Time.timeScale = 1;
     }
     public void enemyDie() 
     {
