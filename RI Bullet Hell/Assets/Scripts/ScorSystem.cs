@@ -22,6 +22,11 @@ public class ScorSystem : MonoBehaviour
             PlayerPrefs.SetInt("ResetNo", x);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (Input.GetKeyDown(KeyCode.P)) 
+        {
+            PlayerPrefs.SetInt("ResetNo", 0);
+            Debug.Log(PlayerPrefs.GetInt("ResetNo"));
+        }
         
     }
 }
