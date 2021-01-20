@@ -151,11 +151,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: SnipEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2946427358029450025, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
         type: 3}
       propertyPath: GetHealth
       value: 
       objectReference: {fileID: 8300000, guid: 98e966b619acb584086e3cc4817d675d, type: 3}
+    - target: {fileID: 2946427358029450026, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2946427358029450029, guid: 6295879dadccc8f4891b8372b1a63764,
         type: 3}
       propertyPath: lookAt
@@ -226,6 +236,16 @@ PrefabInstance:
       propertyPath: lookAt
       value: 
       objectReference: {fileID: 2926903392763561089}
+    - target: {fileID: 5810304768032861768, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810304768032861768, guid: 6295879dadccc8f4891b8372b1a63764,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6295879dadccc8f4891b8372b1a63764, type: 3}
 --- !u!4 &2926903393128796891 stripped

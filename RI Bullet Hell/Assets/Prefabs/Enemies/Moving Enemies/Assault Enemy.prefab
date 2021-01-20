@@ -146,6 +146,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3896403005835134091}
     m_Modifications:
+    - target: {fileID: 146641020368340821, guid: 1a9f01dcf489c374fa39f89649ea4bd2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.78
+      objectReference: {fileID: 0}
     - target: {fileID: 715184410365940092, guid: 1a9f01dcf489c374fa39f89649ea4bd2,
         type: 3}
       propertyPath: lookAt
@@ -155,6 +160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AREnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624360660612634445, guid: 1a9f01dcf489c374fa39f89649ea4bd2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3624360660612634482, guid: 1a9f01dcf489c374fa39f89649ea4bd2,
         type: 3}
@@ -191,6 +201,11 @@ PrefabInstance:
       propertyPath: GetHealth
       value: 
       objectReference: {fileID: 8300000, guid: 98e966b619acb584086e3cc4817d675d, type: 3}
+    - target: {fileID: 3624360660612634482, guid: 1a9f01dcf489c374fa39f89649ea4bd2,
+        type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4109394463301242359, guid: 1a9f01dcf489c374fa39f89649ea4bd2,
         type: 3}
       propertyPath: m_LocalPosition.x

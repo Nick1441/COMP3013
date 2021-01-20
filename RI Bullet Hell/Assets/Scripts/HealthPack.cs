@@ -24,15 +24,18 @@ public class HealthPack : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        string methodName = "getHP";
+        if (other.gameObject.tag == "Player")
+        {
+            string methodName = "getHP";
 
-        SendMessageOptions messageOptions = SendMessageOptions.DontRequireReceiver;
+            SendMessageOptions messageOptions = SendMessageOptions.DontRequireReceiver;
 
-        Transform hitObject = other.transform;
+            Transform hitObject = other.transform;
 
-        hitObject.SendMessage(methodName, health, messageOptions);
+            hitObject.SendMessage(methodName, health, messageOptions);
 
-        SpawnDie();
+            SpawnDie();
+        }
     }
     private void SpawnDie() 
     {
