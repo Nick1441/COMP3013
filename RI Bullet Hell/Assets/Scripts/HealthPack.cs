@@ -18,9 +18,9 @@ public class HealthPack : MonoBehaviour
     void Update()
     {
         
-        to = to + new Vector3(degrees, 0, 0);
+       // to = to + new Vector3(degrees, 0, 0);
 
-        transform.eulerAngles = Vector3.Lerp(transform.rotation.eulerAngles, to, Time.deltaTime);
+        //transform.eulerAngles = Vector3.Lerp(transform.rotation.eulerAngles, to, Time.deltaTime);
     }
     private void OnCollisionEnter(Collision other)
     {
