@@ -3067,6 +3067,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5363122583104476963, guid: 8840cc05b4ff86143b0c311eb0fb1c6b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.17
+      objectReference: {fileID: 0}
     - target: {fileID: 8346934107131988259, guid: 8840cc05b4ff86143b0c311eb0fb1c6b,
         type: 3}
       propertyPath: m_PlayOnAwake

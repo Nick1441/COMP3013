@@ -82,7 +82,7 @@ public class HealthSystem : MonoBehaviour
         Time.timeScale = 1;
         int reset = PlayerPrefs.GetInt("ResetNo");
         int runKill = PlayerPrefs.GetInt("RunKills");
-        int score = reset * runKill;
+        int score = reset * (runKill + 1);
         PlayerPrefs.SetInt("Score", score);
        // PlayerPrefs.SetInt("ResetNo", 0);
         PlayerPrefs.SetInt("RunKills", 0);
