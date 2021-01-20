@@ -16,6 +16,10 @@ This project will be a procedurally generated bullet hell style of game. It will
 - We will also be using [Microsoft Planner](https://tasks.office.com/) to aid with the agile development.
 - To communicate with team members we will be using Disord (A group chat software) as well as [Zoom](https://zoom.us/). This is replacing the normal contact time we would have been able to do if it weren't for COVID-19.
 
+# Links to videos
+
+
+
 ![Main Menu](https://img.itch.zone/aW1hZ2UvODg4MzY5LzUwMTI4OTEucG5n/347x500/SiIetD.png)
 ![Screenshot of gameplay 1](https://img.itch.zone/aW1hZ2UvODg4MzY5LzUwMTI4OTAucG5n/347x500/LyOgDm.png)
 ![Screenshot of gameplay 2](https://img.itch.zone/aW1hZ2UvODg4MzY5LzUwMTI4OTUucG5n/347x500/8YDp0E.png)
